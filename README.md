@@ -115,9 +115,9 @@ Metrics tracked
 
 
 ## Limitations
-No hyperparameter search framework
-No distributed execution
-No experiment tagging or filtering system
-No visualisation layer yet
-No database-backed tracking (file-based only)
+- No hyperparameter search framework
+- No distributed execution
+- No experiment tagging or filtering system
+- No visualisation layer yet
+- No database-backed tracking (file-based only)
 
