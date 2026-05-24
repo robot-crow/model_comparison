@@ -102,11 +102,12 @@ This:
 
 ### Outputs:
 
-raw per-run results
-aggregated model performance summary
-Metrics tracked
+- raw per-run results
+- aggregated model performance summary
 
-### For each model:
+### Metrics tracked
+
+#### For each model:
 - accuracy
 - precision (weighted)
 - recall (weighted)
