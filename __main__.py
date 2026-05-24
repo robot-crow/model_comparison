@@ -7,6 +7,7 @@ def main():
     Entry point for running a default experiment.
     """
     result = run_experiment()
+    print("Main returned result (raw):")
     print(result)
 
 
