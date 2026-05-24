@@ -107,11 +107,11 @@ aggregated model performance summary
 Metrics tracked
 
 ### For each model:
--accuracy
--precision (weighted)
--recall (weighted)
--f1 score (weighted)
--ROC-AUC (binary and multiclass supported)
+- accuracy
+- precision (weighted)
+- recall (weighted)
+- f1 score (weighted)
+- ROC-AUC (binary and multiclass supported)
 
 
 ## Limitations
