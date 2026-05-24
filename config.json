@@ -1,7 +1,12 @@
 {
-	"dataset": {
-		"name": "breast_cancer"
+	"datasets": [
+		{
+			"name": "digits"
 		},
+		{
+			"name": "breast_cancer"
+		}
+	],
 	"models": [
 		{
 			"name": "logistic_regression",
