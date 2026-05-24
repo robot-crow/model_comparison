@@ -78,11 +78,13 @@ saves results to a timestamped folder
 
 Output per run:
 
+```
 experiments/
 └── 2026-05-24_16-58-20/
     ├── config.json
     ├── meta.json
     └── metrics.csv
+```
 
 ### 3. Analyse results
 
