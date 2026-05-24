@@ -1,0 +1,24 @@
+{
+  "models": [
+    {
+      "name": "logistic_regression",
+      "type": "logistic_regression",
+      "params": {
+        "max_iter": 500
+      }
+    },
+    {
+      "name": "random_forest",
+      "type": "random_forest",
+      "params": {}
+    },
+    {
+      "name": "mlp",
+      "type": "mlp",
+      "params": {
+        "hidden_layer_sizes": [100],
+        "max_iter": 5000
+      }
+    }
+  ]
+}
