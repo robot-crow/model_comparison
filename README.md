@@ -21,6 +21,7 @@ It is designed to be readable, reproducible, and easy to extend without external
 
 ## Project structure:
 
+```
 model_comparison/
 ├── runner.py              # Executes experiments
 ├── analysis.py            # Aggregates results across runs
@@ -31,6 +32,7 @@ model_comparison/
 │       ├── config.json
 │       ├── meta.json
 │       └── metrics.csv
+```
 
 ## How it works
 ### 1. Define experiment config
