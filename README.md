@@ -19,14 +19,15 @@ analyse results across multiple runs
 
 It is designed to be readable, reproducible, and easy to extend without external experiment tracking tools.
 
-Project structure
+## Project structure:
+
 model_comparison/
 ├── runner.py              # Executes experiments
 ├── analysis.py            # Aggregates results across runs
 ├── datasets.py            # Dataset registry
 ├── config.json            # Experiment configuration
 ├── experiments/           # Output directory (auto-generated)
-│   └── <timestamped runs>/
+│   └── <timestamp>/
 │       ├── config.json
 │       ├── meta.json
 │       └── metrics.csv
