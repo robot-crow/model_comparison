@@ -12,10 +12,10 @@ This project is a minimal experiment runner for classification models.
 
 ### It allows you to:
 
-define models and datasets in a config file
-run all combinations consistently
-save results per run
-analyse results across multiple runs
+- define models and datasets in a config file
+- run all combinations consistently
+- save results per run
+- analyse results across multiple runs
 
 It is designed to be readable, reproducible, and easy to extend without external experiment tracking tools.
 
@@ -71,10 +71,10 @@ python -m model_comparison
 
 Each run:
 
-loads datasets from registry
-trains all configured models
-evaluates predictions
-saves results to a timestamped folder
+- loads datasets from registry
+- trains all configured models
+- evaluates predictions
+- saves results to a timestamped folder
 
 Output per run:
 
@@ -94,11 +94,11 @@ experiments/
 python model_comparison/analysis.py
 ```
 
-#### This:
+This:
 
-loads all experiment runs
-combines results into a single dataframe
-produces summary statistics per model
+- loads all experiment runs
+- combines results into a single dataframe
+- produces summary statistics per model
 
 ### Outputs:
 
