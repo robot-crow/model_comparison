@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "model-comparison"
+version = "0.1.0"
+description = "A modular Python framework for running and comparing classical machine learning models across datasets with standardised evaluation and reproducible experiment tracking."
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
