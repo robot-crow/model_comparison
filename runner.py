@@ -21,8 +21,10 @@ from sklearn.metrics import (
     roc_auc_score
 )
 
+from model_comparison.datasets import DATASET_REGISTRY
 
 CONFIG_PATH = Path(__file__).resolve().parent / "config.json"
+
 
 def build_model(model_type, params):
     if model_type == "logistic_regression":
@@ -62,24 +64,23 @@ def run_experiment():
     """
     Minimal reproducible experiment: compare models on one dataset.
     """
-
+    # config
+    with open(CONFIG_PATH, "r") as f:
+        config = json.load(f)
+        
     print("Starting experiment...")
 
     # dataset
     print("Loading dataset.")
-    data = load_breast_cancer()
-    X = data.data
-    y = data.target
+    dataset_name = config["dataset"]["name"]
+
+    X, y = DATASET_REGISTRY[dataset_name]()
 
     # split
     print("Splitting dataset.")
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.2, random_state=42
     )
-
-    # models
-    with open(CONFIG_PATH, "r") as f:
-        config = json.load(f)
 
     results = {}
 
