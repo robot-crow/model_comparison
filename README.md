@@ -100,25 +100,19 @@ loads all experiment runs
 combines results into a single dataframe
 produces summary statistics per model
 
-Outputs:
+### Outputs:
 
 raw per-run results
 aggregated model performance summary
 Metrics tracked
 
-For each model:
+### For each model:
+-accuracy
+-precision (weighted)
+-recall (weighted)
+-f1 score (weighted)
+-ROC-AUC (binary and multiclass supported)
 
-accuracy
-precision (weighted)
-recall (weighted)
-f1 score (weighted)
-ROC-AUC (binary and multiclass supported)
-Design goals
-Keep dependencies minimal (sklearn + pandas + numpy)
-Make experiments reproducible via config files
-Separate execution from analysis
-Store all run outputs locally (no external tracking tools)
-Keep structure simple enough to inspect manually
 
 ## Limitations
 No hyperparameter search framework
